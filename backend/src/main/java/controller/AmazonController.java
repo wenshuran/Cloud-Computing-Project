@@ -34,15 +34,15 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping("/")
 public class AmazonController {
-    private String accessKeyID = "AKIAWAV7CBP3SGZV36HH";
-    private String secretKey = "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";
-    private String bucket = "ccwenshuran";
+    private String accessKeyID = "";
+    private String secretKey = "";
+    private String bucket = "";
     //表名
     private static String TABLE_NAME = "awsUser";
     //用户凭证对象
     private static AWSCredentialsProvider awsCredentialsProvider = new AWSCredentialsProvider() {
-        private String accessKeyID = "AKIAWAV7CBP3QXXTHR7W";
-        private String secretKey = "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";
+        private String accessKeyID = "";
+        private String secretKey = "";
         public void refresh() {}
         public AWSCredentials getCredentials() {
             return new BasicAWSCredentials(accessKeyID, secretKey);
